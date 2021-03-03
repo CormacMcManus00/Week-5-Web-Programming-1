@@ -1,0 +1,18 @@
+<div class="container">
+  <h3>Cormac McManus</h3>
+  <h4>S00197425</h4>
+  <br>
+  <h1>Movies</h1>
+  <app-add-movie></app-add-movie>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-list-movies (onSelectedMovie)="setSelectedMovie ($event)"></app-list-movies>
+    </div>
+    <div class="col">
+      <app-movie-detail [movieDetails]="mySelectedMovie"></app-movie-detail>
+    </div>
+  </div>
+</div>
